@@ -1,0 +1,164 @@
+:root {
+    --text-color: #f3f3f3;
+    --focus-form-control: #3371FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text-color);
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: 
+        linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), 
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+
+.title {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 3rem 0 0.5rem; 
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: var(--text-color);
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.125rem;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    border-radius: 4px;
+    padding: 2.5rem 0.625rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: var(--text-color);
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-text {
+    text-align: left;
+    color: var(--text-color);
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.form-text-short {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.form-control {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.3rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.form-control:focus,
+.input-textarea:focus {
+    outline: none;
+    border: 1px solid var(--focus-form-control);
+    box-shadow: 0px 0px 4px var(--focus-form-control);
+}
+
+.input-radio,
+.input-checkbox {
+    margin-right: 0.5rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 0.25rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #37af65;
+    color: var(--text-color);
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+    .survey-form {
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .survey-form {
+        width: 720px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
