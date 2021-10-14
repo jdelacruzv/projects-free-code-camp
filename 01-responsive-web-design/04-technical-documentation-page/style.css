@@ -8,6 +8,7 @@ body {
     background-color: #fff;    
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .title {
@@ -30,7 +31,7 @@ body {
     padding: 0;
     margin: 0;
     height: 200px;
-    overflow-y: auto;
+    overflow: scroll;
 }
 
 .menu__item {
@@ -44,15 +45,38 @@ body {
     color: #4d4e53;
 }
 
+.main {
+    padding: 1rem;
+}
+
 @media screen and (min-width: 816px) {
+    .navbar,
+    .main {
+        display: inline-block;
+        height: 100vh;
+    }
+
     .navbar {
-        width: 300px;
         border-right: solid;
         border-color: rgba(0, 22, 22, 0.4);
+        width: 300px;
     }
 
     .menu {
         height: 90vh;
+    }
+
+    .main {
+        padding-top: 0;
+        width: calc(100vw - 305px);
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: scroll;
+    }
+
+    p {
+        margin: 0;
     }
 }
 
