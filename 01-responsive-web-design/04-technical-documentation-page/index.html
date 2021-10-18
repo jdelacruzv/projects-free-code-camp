@@ -8,28 +8,32 @@
     <title>Technical Documentation Page</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__title">Technical Documentation Page</h1>
+        <h5 class="header__subtitle">Jose De La Cruz</h5>
+    </header>
     <nav class="navbar">
-        <h1 class="navbar__title">JS Documentation</h1>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link"href="#intro">Introduction</a></li>
-            <li class="menu__item"><a class="menu__link"href="#what-you-know">What you should already know</a></li>
-            <li class="menu__item"><a class="menu__link"href="#js-java">JavaScript and Java</a></li>
-            <li class="menu__item"><a class="menu__link"href="#hello-work">Hello world</a></li>
-            <li class="menu__item"><a class="menu__link"href="#variables">Variables</a></li>
-            <li class="menu__item"><a class="menu__link"href="#declaring-variables">Declaring variables</a></li>
-            <li class="menu__item"><a class="menu__link"href="#variable-scope">Variable scope</a></li>
-            <li class="menu__item"><a class="menu__link"href="#global-variables">Global variables</a></li>
-            <li class="menu__item"><a class="menu__link"href="#constants">Constants</a></li>
-            <li class="menu__item"><a class="menu__link"href="#data-types">Data types</a></li>
-            <li class="menu__item"><a class="menu__link"href="#if-else">if...else statement</a></li>
-            <li class="menu__item"><a class="menu__link"href="#while">while statement</a></li>
-            <li class="menu__item"><a class="menu__link"href="#function">Function declarations</a></li>
-            <li class="menu__item"><a class="menu__link"href="#reference">Reference</a></li>
+        <h2 class="navbar__title">JS Documentation</h2>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a class="navbar__link"href="#introduction">Introduction</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#what-you-should-already-know">What you should already know</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#javascript-and-java">JavaScript and Java</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#hello-world">Hello world</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#variables">Variables</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#declaring-variables">Declaring variables</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#variable-scope">Variable scope</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#global-variables">Global variables</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#constants">Constants</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#data-types">Data types</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#if...else-statement">if...else statement</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#while-statement">while statement</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#function-declarations">Function declarations</a></li>
+            <li class="navbar__item"><a class="navbar__link"href="#reference">Reference</a></li>
         </ul>
     </nav>
     
     <main class="main">
-        <section id="intro">
+        <section id="introduction">
             <h2 class="section__title">Introduction</h2>
             <p class="section__text">
                 JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.                
@@ -46,7 +50,7 @@
                 </li>
             </ul>
         </section>
-        <section id="what-you-know">
+        <section id="what-you-should-already-know">
             <h2 class="section__title">What you should already know</h2>
             <p class="section__text">This guide assumes you have the following basic background:
             </p>
@@ -62,7 +66,7 @@
                 </li>
             </ul>
         </section>
-        <section id="js-java">
+        <section id="javascript-and-java">
             <h2 class="section__title">JavaScript and Java</h2>
             <p class="section__text">
                 JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
@@ -74,7 +78,7 @@
                 JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
             </p>
         </section>
-        <section id="hello-work">
+        <section id="hello-world">
             <h2 class="section__title">Hello work</h2>
             <p class="section__text">
                 To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
@@ -210,7 +214,7 @@
                 Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
             </p>
         </section>
-        <section id="if-else">
+        <section id="if...else-statement">
             <h2 class="section__title">if...else statement</h2>
             <p class="section__text">
                 Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
@@ -242,7 +246,7 @@
             </p>
             <code class="section__code">if ((x = y)) { /* statements here */ }</code>            
         </section>
-        <section id="while">
+        <section id="while-statement">
             <h2 class="section__title">while statement</h2>
             <p class="section__text">
                 A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
@@ -283,7 +287,7 @@
             </p>
         </section>
 
-        <section id="function">
+        <section id="function-declarations">
             <h2 class="section__title">Function declarations</h2>
             <p class="section__text">
                 A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
