@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#welcome">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projects">Work</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome" class="welcome">
+            <h1 class="welcome__greeting">Hey I am Mimic</h1>
+            <h4 class="welcome__occupation">a web developer</h4>
+        </section>
+        <section id="projects" class="projects">
+            <h2 class="projects__title">These are some of my projects</h2>            
+            <div class="project">
+                <a class="project__link" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+                    <img class="project__img" src="assets/img/tribute.jpg" alt="Tribute Page">
+                    <p class="project__title">
+                        <span class="code">&#60;</span> 
+                        Tribute Page 
+                        <span class="code">&#47;&#62;</span>
+                    </p>
+                </a>
+                <a class="project__link" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+                    <img class="project__img" src="assets/img/random-quote-machine.png" alt="Random Quote Machine">
+                    <p class="project__title">
+                        <span class="code">&#60;</span> 
+                        Random Quote Machine 
+                        <span class="code">&#47;&#62;</span>
+                    </p>
+                </a>
+                <a class="project__link" href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
+                    <img class="project__img" src="assets/img/calc.png" alt="JavaScript Calculator">
+                    <p class="project__title">
+                        <span class="code">&#60;</span>
+                        JavaScript Calculator 
+                        <span class="code">&#47;&#62;</span>
+                    </p>
+                </a>
+                <a class="project__link" href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
+                    <img class="project__img" src="assets/img/map.jpg" alt="Map Data Across the Globe">
+                    <p class="project__title">
+                        <span class="code">&#60;</span>
+                        Map Data Across the Globe 
+                        <span class="code">&#47;&#62;</span>
+                    </p>
+                </a>
+                <a class="project__link" href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
+                    <img class="project__img" src="assets/img/wiki.png" alt="Wikipedia Viewer">
+                    <p class="project-title">
+                        <span class="code">&#60;</span>
+                        Wikipedia Viewer 
+                        <span class="code">&#47;&#62;</span>
+                    </p>
+                </a>
+                <a class="project__link" href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
+                    <img class="project__img" src="assets/img/tic-tac-toe.png" alt="Tic Tac Toe Game">
+                    <p class="project__title">
+                        <span class="code">&#60;</span>
+                        Tic Tac Toe Game 
+                        <span class="code">&#47;&#62;</span>
+                    </p>
+                </a>
+            </div>
+            <a class="btn btn--show-all" href="https://codepen.io/FreeCodeCamp/" target="_blank">
+                Show all
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact__header">
+                <h2 class="contact__title">Let's work together...</h2>
+                <h4 class="contact__subtitle">How do you take your coffee?</h4>
+            </div>
+            <div class="contact__links">
+                <a class="btn contact__item" href="https://www.facebook.com/freecodecamp" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    Facebook
+                </a>
+                <a class="btn contact__item" href="https://github.com/freecodecamp" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a class="btn contact__item" href="https://twitter.com/freecodecamp" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+                <a class="btn contact__item" href="mailto:example@example.com" target="_blank">
+                    <i class="fas fa-at"></i>
+                    Send a mail
+                </a>
+                <a class="btn contact__item" href="tel:999-999-999" target="_blank">
+                    <i class="fas fa-mobile-alt"></i>
+                    Call me
+                </a>
+            </div>
+            <hr class="contact__line">
+        </section>
+    </main>
+    <footer class="footer">
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p>© Created for freeCodeCamp</p>
+    </footer>
+</body>
+</html>
